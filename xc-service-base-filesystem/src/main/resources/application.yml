@@ -7,7 +7,7 @@ spring:
   data:
     mongodb:
       database: xc_cms
-      uri: mongodb://root:123@127.0.0.1:27017
+      uri: mongodb://root:123@localhost:27017
 #SpringMVC上传文件配置
   servlet:
     multipart:
