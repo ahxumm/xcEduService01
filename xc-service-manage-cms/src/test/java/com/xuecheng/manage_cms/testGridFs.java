@@ -38,6 +38,16 @@ public class testGridFs {
         System.out.println(objectId);
     }
 
+    @Test
+    public void testStore2() throws FileNotFoundException {
+        //定义file
+        File file =new File("D:\\Code\\IdeaProjects2\\xcEduService01\\test-freemarker\\src\\main\\resources\\templates\\course.ftl");
+        //定义fileInputStream
+        FileInputStream fileInputStream = new FileInputStream(file);
+        ObjectId objectId = gridFsTemplate.store(fileInputStream, "course.ftl");
+        System.out.println(objectId);
+    }
+
     //取文件
 //    @Test
 //    public void queryFile() throws IOException {
